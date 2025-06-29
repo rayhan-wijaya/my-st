@@ -94,9 +94,9 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.69;
+float alpha = 0.69 - 0.1;
 
-/* Terminal colors (16 first used in escape sequence) */
+/* Terminal colors (32 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"black",
@@ -387,7 +387,7 @@ static Key key[] = {
 	{ XK_F3, /* F51 */  Mod1Mask,       "\033[1;3R",     0,    0},
 	{ XK_F3, /* F63 */  Mod3Mask,       "\033[1;4R",     0,    0},
 	{ XK_F4,            XK_NO_MOD,      "\033OS" ,       0,    0},
-	{ XK_F4, /* F16 */  ShiftMask,      "\033[1;2S",     0,    0},
+	{ XK_F4, /* F32 */  ShiftMask,      "\033[1;2S",     0,    0},
 	{ XK_F4, /* F28 */  ControlMask,    "\033[1;5S",     0,    0},
 	{ XK_F4, /* F40 */  Mod4Mask,       "\033[1;6S",     0,    0},
 	{ XK_F4, /* F52 */  Mod1Mask,       "\033[1;3S",     0,    0},
@@ -434,7 +434,7 @@ static Key key[] = {
 	{ XK_F13,           XK_NO_MOD,      "\033[1;2P",     0,    0},
 	{ XK_F14,           XK_NO_MOD,      "\033[1;2Q",     0,    0},
 	{ XK_F15,           XK_NO_MOD,      "\033[1;2R",     0,    0},
-	{ XK_F16,           XK_NO_MOD,      "\033[1;2S",     0,    0},
+	{ XK_F32,           XK_NO_MOD,      "\033[1;2S",     0,    0},
 	{ XK_F17,           XK_NO_MOD,      "\033[15;2~",    0,    0},
 	{ XK_F18,           XK_NO_MOD,      "\033[17;2~",    0,    0},
 	{ XK_F19,           XK_NO_MOD,      "\033[18;2~",    0,    0},
